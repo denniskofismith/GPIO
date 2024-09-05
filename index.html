@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabs</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section class="section">
+    <div class="title">
+      <h2>ROOM OCUPANCY MONTORING SYSTEM</h2>
+    </div>
+
+    <div class="about-center section-center">
+      <article class="about-img">
+        <img src="./hero-bcg.jpeg" alt="" />
+      </article>
+      <article class="about">
+        <!-- btn container -->
+        <div class="btn-container">
+          <button class="tab-btn active" data-id="available-tab" id="available">AVAILABLE</button>
+          <button class="tab-btn" data-id="occupied" id="occupied-tab">OCCUPIED</button>
+        </div>
+        <div class="about-content">
+          <!-- single item -->
+          <div class="content active" id="available">
+            <div class="card">
+              <!-- {{ 'available' if class_status == 'Class Available' else 'unavailable' }} -->
+              <div class="card-header">
+                <h3>Classroom 1</h3>
+              </div>
+              <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non at modi, sint voluptatem, fuga
+                  repellendus ad amet sunt, est eligendi doloremque. Exercitationem a minima nostrum impedit et facere
+                  dolorem nemo?
+                  Illo illum dolore aperiam nemo, ipsa dicta rerum alias optio provident commodi harum laboriosam
+                  accusantium dolorem recusandae facere amet nobis! Praesentium similique fuga asperiores at, quibusdam
+                  eaque sequi rem facere.
+                </p>
+              </div>
+              <div class="card-footer">
+                <p>Status: Available</p>
+                <time datetime="{{ timestamp }}">
+                  <i class="fas fa-calendar-alt mr-2"></i>05:17:2002
+                </time>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="content" id="occupied">
+
+          </div>
+          <!-- end of single item -->
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
